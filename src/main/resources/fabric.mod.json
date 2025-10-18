@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "hello-77-world",
+	"version": "${version}",
+	"name": "Hello, CA77's World!",
+	"description": "Hello, CA77's World!",
+	"authors": [
+		"FlowerCA77"
+	],
+	"contact": {
+		"homepage": "https://FlowerCA77.github.io/",
+		"sources": "https://github.com/FlowerCA77/hello-ca77s-world-1.20.1-fabric"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hello-77-world/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.flowerca77.hello_77_world.HelloCA77sWorld"
+		],
+		"client": [
+			"com.flowerca77.hello_77_world.HelloCA77sWorldClient"
+		],
+		"fabric-datagen": [
+			"com.flowerca77.hello_77_world.HelloCA77sWorldDataGenerator"
+		]
+	},
+	"mixins": [
+		"hello-77-world.mixins.json",
+		{
+			"config": "hello-77-world.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
