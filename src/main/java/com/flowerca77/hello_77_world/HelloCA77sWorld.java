@@ -1,5 +1,7 @@
 package com.flowerca77.hello_77_world;
 
+import com.flowerca77.hello_77_world.item.ModItemGroups;
+import com.flowerca77.hello_77_world.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -19,6 +21,8 @@ public class HelloCA77sWorld implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+        ModItems.registerItems();
+        ModItemGroups.registerGroups();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

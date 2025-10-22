@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hello-77-world:item/raw_ice_ether"
+  }
+}
